@@ -1,0 +1,89 @@
+/* static/css/custom.css */
+
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background-color: #f4f7f6; /* Light grayish-blue background */
+    color: #333; /* Darker text for better readability */
+}
+
+.navbar {
+    box-shadow: 0 2px 4px rgba(0,0,0,.1); /* Subtle shadow for navbar */
+}
+
+.navbar-brand {
+    font-weight: bold;
+}
+
+/* Cards styling */
+.card {
+    border: none; /* Remove default card border */
+    border-radius: 0.5rem; /* Softer rounded corners */
+    box-shadow: 0 4px 8px rgba(0,0,0,0.1); /* Deeper shadow for cards */
+    transition: transform .2s ease-in-out, box-shadow .2s ease-in-out; /* Animation for hover */
+}
+
+.card:hover {
+    transform: translateY(-5px); /* Lift card on hover */
+    box-shadow: 0 8px 16px rgba(0,0,0,0.2); /* Enhance shadow on hover */
+}
+
+.card-title {
+    color: #0056b3; /* Primary color for card titles */
+}
+
+.btn-primary {
+    background-color: #0056b3; /* Primary button color */
+    border-color: #0056b3;
+    transition: background-color .2s ease-in-out;
+}
+
+.btn-primary:hover {
+    background-color: #004494; /* Darken button on hover */
+    border-color: #00306a;
+}
+
+/* Footer styling */
+footer.bg-light {
+    background-color: #e9ecef !important; /* Ensure footer background color is applied */
+    border-top: 1px solid #dee2e6; /* Add a top border to the footer */
+}
+
+/* Typography improvements */
+h1, h2, h3, h4, h5, h6 {
+    font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif;
+    color: #2c3e50; /* Dark blue-gray for headings */
+}
+
+p {
+    line-height: 1.6; /* Improve paragraph readability */
+}
+
+/* Add a subtle fade-in animation to the body content */
+.container.mt-4 {
+    animation: fadeIn 0.5s ease-in-out;
+}
+
+@keyframes fadeIn {
+    from { opacity: 0; transform: translateY(10px); }
+    to { opacity: 1; transform: translateY(0); }
+}
+
+/* Style for the dropdown menu */
+.dropdown-menu {
+    border-radius: 0.25rem;
+    box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.15);
+}
+
+.dropdown-item:hover {
+    background-color: #f8f9fa; /* Light hover for dropdown items */
+}
+
+/* Responsive adjustments if needed */
+@media (max-width: 768px) {
+    body {
+        padding-top: 56px; /* Adjust padding for smaller screens if navbar height changes */
+    }
+    .navbar-nav {
+        text-align: center;
+    }
+}
